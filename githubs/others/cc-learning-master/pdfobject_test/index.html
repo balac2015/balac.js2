@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PDF Reader</title>
+  <script src="pdfobject.js"></script>
+  <script src="//cdn.bootcss.com/jquery/1.8.3/jquery.js"></script>
+  <script src="https://code.createjs.com/preloadjs-0.6.2.min.js"></script>
+  <style>
+    *{ margin: 0; padding: 0;  }
+    html, body, #container{ width: 100%; height: 100%; overflow: hidden; }
+    body{
+      background: #ededed url(loading.gif) no-repeat center center;
+    }
+    #tip{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 400px;
+      height: 100px;
+      margin-left: -200px;
+      margin-top: -50px;
+      text-align: center;
+      line-height: 32px;
+      background: #ededed;
+      display: none;
+    }
+    iframe{
+      display: none;
+      border: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div id="container"></div>
+  <div id="tip"></div>
+  <script>
+    function Check_AdobeReader() {
+      var displayString;
+      var acrobat = new Object();
+      acrobat.installed = false;
+      acrobat.version = "0.0";
+
+      if (navigator.plugins && navigator.plugins.length) {
+          for (x = 0; x < navigator.plugins.length; x++) {
+              if (navigator.plugins[x].description.indexOf("Adobe Acrobat") != -1) {
+                  acrobat.version = parseFloat(navigator.plugins[x].description.split("Version ")[1]);
+                  if (acrobat.version.toString().length == 1) acrobat.version += ".0";
+                  acrobat.installed = true;
+                  displayString = "Acrobat Version: " + acrobat.version;
+                  break;
+              } else if (navigator.plugins[x].description.indexOf("Adobe PDF Plug-In") != -1) {
+                  acrobat.installed = true;
+                  acrobat.version = "8+";
+                  displayString = "Acrobat Version 8 or Above";
+              }
+          }
+      } else if (window.ActiveXObject) {
+          for (x = 2; x < 10; x++) {
+              try {
+                  oAcro = eval("new ActiveXObject('PDF.PdfCtrl." + x + "');");
+                  if (oAcro) {
+                      acrobat.installed = true;
+
+                      acrobat.version = x + ".0";
+                      displayString = "Acrobat Version: " + acrobat.version;
+                  }
+              }
+              catch (e) { }
+          }
+
+          try {
+              oAcro4 = new ActiveXObject("PDF.PdfCtrl.1");
+              if (oAcro4) {
+                  acrobat.installed = true;
+                  acrobat.version = '4.0';
+                  displayString = 'Acrobat Version: ' + acrobat.version;
+              }
+          }
+          catch (e) { }
+
+          try {
+              oAcro7 = new ActiveXObject('AcroPDF.PDF.1');
+              if (oAcro7) {
+                  acrobat.installed = true;
+                  acrobat.version = '7.0';
+                  displayString = 'Acrobat Version: ' + acrobat.version;
+              }
+          }
+          catch (e) { }
+      }
+
+      return acrobat;
+    }
+  </script>
+  <script>
+    var _pdf_url = 'size.pdf';
+    var $tip = $('#tip');
+    $tip.html('您的浏览器不支持在线预览，请下载 <a href="https://get.adobe.com/cn/reader/">Adobe Reader</a>安装后再使用在线预览功能 或<a href="'+ _pdf_url +'">直接下载</a>文件');
+    if($.browser.msie && parseInt($.browser.version) < 9){
+      var reader = Check_AdobeReader();
+      if(reader.installed){
+        loadPDF(_pdf_url, function(){
+          $('<iframe src="'+ _pdf_url +'" frameborder="0" id="pdfiframe"></iframe>').appendTo($('body')).show();
+        });
+      }else{
+        $tip.show();
+      }
+    }else{
+      if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+        loadPDF(_pdf_url, function(){
+          window.location.href = _pdf_url;
+        });
+      }else if (/(Android)/i.test(navigator.userAgent)) {
+        $tip.html('您的浏览器不支持在线预览，请<a download="'+ _pdf_url +'" href="'+ _pdf_url +'">直接下载</a>文件').show();
+        $body.append(_pdf_url);
+      }
+      else{
+        if(PDFObject.supportsPDFs){
+          loadPDF(_pdf_url, function(){
+            PDFObject.embed(_pdf_url, "#container");
+          });
+        } else {
+          $tip.show();
+        }
+      }
+    }
+
+    function loadPDF(url, callback){
+      var xmlhttp = null;
+      if (window.XMLHttpRequest){
+        xmlhttp = new XMLHttpRequest();
+      }else if (window.ActiveXObject){
+        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+      }
+      if (xmlhttp != null){
+        xmlhttp.onreadystatechange=state_Change;
+        xmlhttp.open("GET",url,true);
+        xmlhttp.send(null);
+      }else{
+        alert("Your browser does not support XMLHTTP.");
+      }
+
+      function state_Change(){
+        if (xmlhttp.readyState == 4) { // 4 = "loaded"
+          if (xmlhttp.status == 200) { // 200 = OK
+            callback();
+          }else{
+            alert("Problem retrieving XML data");
+          }
+        }
+      }
+    }
+  </script>
+</body>
+</html>

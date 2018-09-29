@@ -1,0 +1,20 @@
+{
+  "presets": [
+    ["es2015", {
+      "loose": true,
+      "modules": false
+    }],
+    "react",
+    "stage-2"
+  ],
+  "env": {
+    "test": {
+      "presets": [
+        ["es2015", {"modules": 'commonjs'}]
+      ]
+    },
+    "production": {
+      "presets": ["babili"]
+    }
+  }
+}

@@ -1,0 +1,4 @@
+<view class="container">
+  <text class="title">{{ title }}</text>
+  <text>哈哈</text>
+</view>

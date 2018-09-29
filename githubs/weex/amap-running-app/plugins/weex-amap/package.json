@@ -1,0 +1,14 @@
+{
+    "version": "0.0.2",
+    "platform": [
+        "ios",
+        "android"
+    ],
+    "description": "weex mapview component",
+    "keywords": [
+        "weex",
+        "map"
+    ],
+    "license": "Apache 2.0",
+    "name": "weex-amap"
+}

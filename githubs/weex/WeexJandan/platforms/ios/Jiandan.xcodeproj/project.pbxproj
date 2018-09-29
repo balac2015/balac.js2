@@ -1,0 +1,556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8A17DE1E1EA61ED400847A88 /* UIWindow+Motion.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A17DE1D1EA61ED400847A88 /* UIWindow+Motion.m */; };
+		8A77E88B1EEE274200C1DDE5 /* libBaiduMobStat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A77E88A1EEE274200C1DDE5 /* libBaiduMobStat.a */; };
+		8A77E88D1EEE27FF00C1DDE5 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A77E88C1EEE27FF00C1DDE5 /* JavaScriptCore.framework */; };
+		8A77E88F1EEE280400C1DDE5 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A77E88E1EEE280400C1DDE5 /* Security.framework */; };
+		8A77E8911EEE280900C1DDE5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A77E8901EEE280900C1DDE5 /* CoreLocation.framework */; };
+		8A77E8931EEE280E00C1DDE5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A77E8921EEE280E00C1DDE5 /* SystemConfiguration.framework */; };
+		8A77E8951EEE281300C1DDE5 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A77E8941EEE281300C1DDE5 /* CoreTelephony.framework */; };
+		8A77E8971EEE281700C1DDE5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A77E8961EEE281700C1DDE5 /* CoreGraphics.framework */; };
+		8A77E8991EEE281C00C1DDE5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A77E8981EEE281C00C1DDE5 /* UIKit.framework */; };
+		8A77E89B1EEE282100C1DDE5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A77E89A1EEE282100C1DDE5 /* Foundation.framework */; };
+		8A77E89D1EEE282900C1DDE5 /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A77E89C1EEE282900C1DDE5 /* libz.1.2.5.tbd */; };
+		8A77E89F1EEE283100C1DDE5 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A77E89E1EEE283100C1DDE5 /* libstdc++.tbd */; };
+		8A77E8A11EEE288D00C1DDE5 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A77E8A01EEE288D00C1DDE5 /* WebKit.framework */; };
+		8A77E8A31EEE289200C1DDE5 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A77E8A21EEE289200C1DDE5 /* libicucore.tbd */; };
+		8A77E8A61EEE308E00C1DDE5 /* WXAppModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A77E8A51EEE308E00C1DDE5 /* WXAppModule.m */; };
+		8A8ADEF01EB058850051C08F /* UIViewController+Orientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8ADEEF1EB058850051C08F /* UIViewController+Orientation.m */; };
+		8A9CFEC01EA4735100B4894F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9CFEBF1EA4735100B4894F /* main.m */; };
+		8A9CFEC31EA4735100B4894F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9CFEC21EA4735100B4894F /* AppDelegate.m */; };
+		8A9CFECB1EA4735100B4894F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A9CFECA1EA4735100B4894F /* Assets.xcassets */; };
+		8A9CFECE1EA4735100B4894F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A9CFECC1EA4735100B4894F /* LaunchScreen.storyboard */; };
+		B31124CA1EBE1353006B7F87 /* WXBrowserImageModule.m in Sources */ = {isa = PBXBuildFile; fileRef = B31124BF1EBE1353006B7F87 /* WXBrowserImageModule.m */; };
+		B31124CB1EBE1353006B7F87 /* WXEventModule.m in Sources */ = {isa = PBXBuildFile; fileRef = B31124C11EBE1353006B7F87 /* WXEventModule.m */; };
+		B31124CC1EBE1353006B7F87 /* WXHTMLParserModule.m in Sources */ = {isa = PBXBuildFile; fileRef = B31124C31EBE1353006B7F87 /* WXHTMLParserModule.m */; };
+		B31124CD1EBE1353006B7F87 /* WXImgLoaderDefaultImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = B31124C51EBE1353006B7F87 /* WXImgLoaderDefaultImpl.m */; };
+		B31124CE1EBE1353006B7F87 /* WXLogModule.m in Sources */ = {isa = PBXBuildFile; fileRef = B31124C71EBE1353006B7F87 /* WXLogModule.m */; };
+		B31124CF1EBE1353006B7F87 /* WXShareModule.m in Sources */ = {isa = PBXBuildFile; fileRef = B31124C91EBE1353006B7F87 /* WXShareModule.m */; };
+		B3A916D91EF51FD00052291D /* AppDelegate+Push.m in Sources */ = {isa = PBXBuildFile; fileRef = B3A916D81EF51FD00052291D /* AppDelegate+Push.m */; };
+		B3A916DB1EF54F940052291D /* jandan.zip in Resources */ = {isa = PBXBuildFile; fileRef = B3A916DA1EF54F940052291D /* jandan.zip */; };
+		F653CFF53BF3FB51A9817E52 /* Pods_Jiandan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87B64E19C66968D39F3563F2 /* Pods_Jiandan.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		21EF9A3466E102F8080BD119 /* Pods-Jiandan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jiandan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Jiandan/Pods-Jiandan.debug.xcconfig"; sourceTree = "<group>"; };
+		4326974907A30B3FC4E8E929 /* Pods-Jiandan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jiandan.release.xcconfig"; path = "Pods/Target Support Files/Pods-Jiandan/Pods-Jiandan.release.xcconfig"; sourceTree = "<group>"; };
+		790813696CFCFDEB0A96B786 /* Pods-jiandan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jiandan.release.xcconfig"; path = "Pods/Target Support Files/Pods-jiandan/Pods-jiandan.release.xcconfig"; sourceTree = "<group>"; };
+		87B64E19C66968D39F3563F2 /* Pods_Jiandan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jiandan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A17DE1C1EA61ED400847A88 /* UIWindow+Motion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+Motion.h"; sourceTree = "<group>"; };
+		8A17DE1D1EA61ED400847A88 /* UIWindow+Motion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+Motion.m"; sourceTree = "<group>"; };
+		8A77E8891EEE274200C1DDE5 /* BaiduMobStat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiduMobStat.h; sourceTree = "<group>"; };
+		8A77E88A1EEE274200C1DDE5 /* libBaiduMobStat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBaiduMobStat.a; sourceTree = "<group>"; };
+		8A77E88C1EEE27FF00C1DDE5 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		8A77E88E1EEE280400C1DDE5 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		8A77E8901EEE280900C1DDE5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		8A77E8921EEE280E00C1DDE5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		8A77E8941EEE281300C1DDE5 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		8A77E8961EEE281700C1DDE5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8A77E8981EEE281C00C1DDE5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8A77E89A1EEE282100C1DDE5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8A77E89C1EEE282900C1DDE5 /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
+		8A77E89E1EEE283100C1DDE5 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		8A77E8A01EEE288D00C1DDE5 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		8A77E8A21EEE289200C1DDE5 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		8A77E8A41EEE308E00C1DDE5 /* WXAppModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXAppModule.h; sourceTree = "<group>"; };
+		8A77E8A51EEE308E00C1DDE5 /* WXAppModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXAppModule.m; sourceTree = "<group>"; };
+		8A8ADEEE1EB058850051C08F /* UIViewController+Orientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Orientation.h"; path = "Jiandan/UIViewController+Orientation.h"; sourceTree = SOURCE_ROOT; };
+		8A8ADEEF1EB058850051C08F /* UIViewController+Orientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Orientation.m"; path = "Jiandan/UIViewController+Orientation.m"; sourceTree = SOURCE_ROOT; };
+		8A9CFEBB1EA4735100B4894F /* Jiandan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jiandan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A9CFEBF1EA4735100B4894F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8A9CFEC11EA4735100B4894F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8A9CFEC21EA4735100B4894F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8A9CFECA1EA4735100B4894F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8A9CFECD1EA4735100B4894F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8A9CFECF1EA4735100B4894F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AA9AE77E1C852D95CF40A9C /* Pods-jiandan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jiandan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-jiandan/Pods-jiandan.debug.xcconfig"; sourceTree = "<group>"; };
+		B31124BE1EBE1353006B7F87 /* WXBrowserImageModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXBrowserImageModule.h; sourceTree = "<group>"; };
+		B31124BF1EBE1353006B7F87 /* WXBrowserImageModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXBrowserImageModule.m; sourceTree = "<group>"; };
+		B31124C01EBE1353006B7F87 /* WXEventModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXEventModule.h; sourceTree = "<group>"; };
+		B31124C11EBE1353006B7F87 /* WXEventModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXEventModule.m; sourceTree = "<group>"; };
+		B31124C21EBE1353006B7F87 /* WXHTMLParserModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXHTMLParserModule.h; sourceTree = "<group>"; };
+		B31124C31EBE1353006B7F87 /* WXHTMLParserModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXHTMLParserModule.m; sourceTree = "<group>"; };
+		B31124C41EBE1353006B7F87 /* WXImgLoaderDefaultImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXImgLoaderDefaultImpl.h; sourceTree = "<group>"; };
+		B31124C51EBE1353006B7F87 /* WXImgLoaderDefaultImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXImgLoaderDefaultImpl.m; sourceTree = "<group>"; };
+		B31124C61EBE1353006B7F87 /* WXLogModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXLogModule.h; sourceTree = "<group>"; };
+		B31124C71EBE1353006B7F87 /* WXLogModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXLogModule.m; sourceTree = "<group>"; };
+		B31124C81EBE1353006B7F87 /* WXShareModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXShareModule.h; sourceTree = "<group>"; };
+		B31124C91EBE1353006B7F87 /* WXShareModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXShareModule.m; sourceTree = "<group>"; };
+		B3A916D61EF51D520052291D /* Jiandan.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Jiandan.entitlements; path = Jiandan/Jiandan.entitlements; sourceTree = SOURCE_ROOT; };
+		B3A916D71EF51FD00052291D /* AppDelegate+Push.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AppDelegate+Push.h"; path = "Jiandan/AppDelegate+Push.h"; sourceTree = SOURCE_ROOT; };
+		B3A916D81EF51FD00052291D /* AppDelegate+Push.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "AppDelegate+Push.m"; path = "Jiandan/AppDelegate+Push.m"; sourceTree = SOURCE_ROOT; };
+		B3A916DA1EF54F940052291D /* jandan.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = jandan.zip; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8A9CFEB81EA4735100B4894F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A77E8A31EEE289200C1DDE5 /* libicucore.tbd in Frameworks */,
+				8A77E8A11EEE288D00C1DDE5 /* WebKit.framework in Frameworks */,
+				8A77E89F1EEE283100C1DDE5 /* libstdc++.tbd in Frameworks */,
+				8A77E89D1EEE282900C1DDE5 /* libz.1.2.5.tbd in Frameworks */,
+				8A77E89B1EEE282100C1DDE5 /* Foundation.framework in Frameworks */,
+				8A77E8991EEE281C00C1DDE5 /* UIKit.framework in Frameworks */,
+				8A77E8971EEE281700C1DDE5 /* CoreGraphics.framework in Frameworks */,
+				8A77E8951EEE281300C1DDE5 /* CoreTelephony.framework in Frameworks */,
+				8A77E8931EEE280E00C1DDE5 /* SystemConfiguration.framework in Frameworks */,
+				8A77E8911EEE280900C1DDE5 /* CoreLocation.framework in Frameworks */,
+				8A77E88F1EEE280400C1DDE5 /* Security.framework in Frameworks */,
+				8A77E88D1EEE27FF00C1DDE5 /* JavaScriptCore.framework in Frameworks */,
+				8A77E88B1EEE274200C1DDE5 /* libBaiduMobStat.a in Frameworks */,
+				F653CFF53BF3FB51A9817E52 /* Pods_Jiandan.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8A77E8881EEE274200C1DDE5 /* BaiduMTJ_iOS_App_Codeless_V4.6.1 */ = {
+			isa = PBXGroup;
+			children = (
+				8A77E8891EEE274200C1DDE5 /* BaiduMobStat.h */,
+				8A77E88A1EEE274200C1DDE5 /* libBaiduMobStat.a */,
+			);
+			path = BaiduMTJ_iOS_App_Codeless_V4.6.1;
+			sourceTree = "<group>";
+		};
+		8A9CFEB21EA4735100B4894F = {
+			isa = PBXGroup;
+			children = (
+				B3A916DA1EF54F940052291D /* jandan.zip */,
+				8A9CFEBD1EA4735100B4894F /* Jiandan */,
+				8A9CFEBC1EA4735100B4894F /* Products */,
+				AFAEDDCE6A63F112E812FF61 /* Pods */,
+				D6D7771A93FFA3B2847A8354 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8A9CFEBC1EA4735100B4894F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A9CFEBB1EA4735100B4894F /* Jiandan.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8A9CFEBD1EA4735100B4894F /* Jiandan */ = {
+			isa = PBXGroup;
+			children = (
+				B3A916D61EF51D520052291D /* Jiandan.entitlements */,
+				B31124BD1EBE1353006B7F87 /* WeexModule */,
+				8A9CFEBE1EA4735100B4894F /* Supporting Files */,
+				8A9CFEC11EA4735100B4894F /* AppDelegate.h */,
+				8A9CFEC21EA4735100B4894F /* AppDelegate.m */,
+				8A9CFECA1EA4735100B4894F /* Assets.xcassets */,
+				8A9CFECC1EA4735100B4894F /* LaunchScreen.storyboard */,
+				8A9CFECF1EA4735100B4894F /* Info.plist */,
+				8A17DE1C1EA61ED400847A88 /* UIWindow+Motion.h */,
+				8A17DE1D1EA61ED400847A88 /* UIWindow+Motion.m */,
+				8A8ADEEE1EB058850051C08F /* UIViewController+Orientation.h */,
+				8A8ADEEF1EB058850051C08F /* UIViewController+Orientation.m */,
+				B3A916D71EF51FD00052291D /* AppDelegate+Push.h */,
+				B3A916D81EF51FD00052291D /* AppDelegate+Push.m */,
+			);
+			name = Jiandan;
+			path = jiandan;
+			sourceTree = "<group>";
+		};
+		8A9CFEBE1EA4735100B4894F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8A9CFEBF1EA4735100B4894F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AFAEDDCE6A63F112E812FF61 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8AA9AE77E1C852D95CF40A9C /* Pods-jiandan.debug.xcconfig */,
+				790813696CFCFDEB0A96B786 /* Pods-jiandan.release.xcconfig */,
+				21EF9A3466E102F8080BD119 /* Pods-Jiandan.debug.xcconfig */,
+				4326974907A30B3FC4E8E929 /* Pods-Jiandan.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B31124BD1EBE1353006B7F87 /* WeexModule */ = {
+			isa = PBXGroup;
+			children = (
+				B31124BE1EBE1353006B7F87 /* WXBrowserImageModule.h */,
+				B31124BF1EBE1353006B7F87 /* WXBrowserImageModule.m */,
+				B31124C01EBE1353006B7F87 /* WXEventModule.h */,
+				B31124C11EBE1353006B7F87 /* WXEventModule.m */,
+				B31124C21EBE1353006B7F87 /* WXHTMLParserModule.h */,
+				B31124C31EBE1353006B7F87 /* WXHTMLParserModule.m */,
+				B31124C41EBE1353006B7F87 /* WXImgLoaderDefaultImpl.h */,
+				B31124C51EBE1353006B7F87 /* WXImgLoaderDefaultImpl.m */,
+				B31124C61EBE1353006B7F87 /* WXLogModule.h */,
+				B31124C71EBE1353006B7F87 /* WXLogModule.m */,
+				B31124C81EBE1353006B7F87 /* WXShareModule.h */,
+				B31124C91EBE1353006B7F87 /* WXShareModule.m */,
+				8A77E8A41EEE308E00C1DDE5 /* WXAppModule.h */,
+				8A77E8A51EEE308E00C1DDE5 /* WXAppModule.m */,
+			);
+			name = WeexModule;
+			path = Jiandan/WeexModule;
+			sourceTree = SOURCE_ROOT;
+		};
+		D6D7771A93FFA3B2847A8354 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A77E8A21EEE289200C1DDE5 /* libicucore.tbd */,
+				8A77E8A01EEE288D00C1DDE5 /* WebKit.framework */,
+				8A77E89E1EEE283100C1DDE5 /* libstdc++.tbd */,
+				8A77E89C1EEE282900C1DDE5 /* libz.1.2.5.tbd */,
+				8A77E89A1EEE282100C1DDE5 /* Foundation.framework */,
+				8A77E8981EEE281C00C1DDE5 /* UIKit.framework */,
+				8A77E8961EEE281700C1DDE5 /* CoreGraphics.framework */,
+				8A77E8941EEE281300C1DDE5 /* CoreTelephony.framework */,
+				8A77E8921EEE280E00C1DDE5 /* SystemConfiguration.framework */,
+				8A77E8901EEE280900C1DDE5 /* CoreLocation.framework */,
+				8A77E88E1EEE280400C1DDE5 /* Security.framework */,
+				8A77E88C1EEE27FF00C1DDE5 /* JavaScriptCore.framework */,
+				8A77E8881EEE274200C1DDE5 /* BaiduMTJ_iOS_App_Codeless_V4.6.1 */,
+				87B64E19C66968D39F3563F2 /* Pods_Jiandan.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8A9CFEBA1EA4735100B4894F /* Jiandan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A9CFED21EA4735100B4894F /* Build configuration list for PBXNativeTarget "Jiandan" */;
+			buildPhases = (
+				2D1E85D489D35333F61159D5 /* [CP] Check Pods Manifest.lock */,
+				8A9CFEB71EA4735100B4894F /* Sources */,
+				8A9CFEB81EA4735100B4894F /* Frameworks */,
+				8A9CFEB91EA4735100B4894F /* Resources */,
+				780B2C5DBDB76B712698EF75 /* [CP] Embed Pods Frameworks */,
+				1DB325C4E4D498261687D96C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Jiandan;
+			productName = jiandan;
+			productReference = 8A9CFEBB1EA4735100B4894F /* Jiandan.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8A9CFEB31EA4735100B4894F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Leo Studio";
+				TargetAttributes = {
+					8A9CFEBA1EA4735100B4894F = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 3B9X46F744;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 8A9CFEB61EA4735100B4894F /* Build configuration list for PBXProject "Jiandan" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8A9CFEB21EA4735100B4894F;
+			productRefGroup = 8A9CFEBC1EA4735100B4894F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8A9CFEBA1EA4735100B4894F /* Jiandan */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8A9CFEB91EA4735100B4894F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3A916DB1EF54F940052291D /* jandan.zip in Resources */,
+				8A9CFECE1EA4735100B4894F /* LaunchScreen.storyboard in Resources */,
+				8A9CFECB1EA4735100B4894F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1DB325C4E4D498261687D96C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Jiandan/Pods-Jiandan-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2D1E85D489D35333F61159D5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		780B2C5DBDB76B712698EF75 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Jiandan/Pods-Jiandan-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8A9CFEB71EA4735100B4894F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B31124CE1EBE1353006B7F87 /* WXLogModule.m in Sources */,
+				B3A916D91EF51FD00052291D /* AppDelegate+Push.m in Sources */,
+				8A77E8A61EEE308E00C1DDE5 /* WXAppModule.m in Sources */,
+				B31124CF1EBE1353006B7F87 /* WXShareModule.m in Sources */,
+				8A9CFEC31EA4735100B4894F /* AppDelegate.m in Sources */,
+				8A9CFEC01EA4735100B4894F /* main.m in Sources */,
+				B31124CA1EBE1353006B7F87 /* WXBrowserImageModule.m in Sources */,
+				8A8ADEF01EB058850051C08F /* UIViewController+Orientation.m in Sources */,
+				B31124CB1EBE1353006B7F87 /* WXEventModule.m in Sources */,
+				B31124CC1EBE1353006B7F87 /* WXHTMLParserModule.m in Sources */,
+				8A17DE1E1EA61ED400847A88 /* UIWindow+Motion.m in Sources */,
+				B31124CD1EBE1353006B7F87 /* WXImgLoaderDefaultImpl.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8A9CFECC1EA4735100B4894F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A9CFECD1EA4735100B4894F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8A9CFED01EA4735100B4894F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8A9CFED11EA4735100B4894F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8A9CFED31EA4735100B4894F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21EF9A3466E102F8080BD119 /* Pods-Jiandan.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Jiandan/Jiandan.entitlements;
+				DEVELOPMENT_TEAM = 3B9X46F744;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = jiandan/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BaiduMTJ_iOS_App_Codeless_V4.6.1",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.leo.jandan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8A9CFED41EA4735100B4894F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4326974907A30B3FC4E8E929 /* Pods-Jiandan.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Jiandan/Jiandan.entitlements;
+				DEVELOPMENT_TEAM = 3B9X46F744;
+				ENABLE_BITCODE = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = jiandan/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BaiduMTJ_iOS_App_Codeless_V4.6.1",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.leo.jandan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A9CFEB61EA4735100B4894F /* Build configuration list for PBXProject "Jiandan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A9CFED01EA4735100B4894F /* Debug */,
+				8A9CFED11EA4735100B4894F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A9CFED21EA4735100B4894F /* Build configuration list for PBXNativeTarget "Jiandan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A9CFED31EA4735100B4894F /* Debug */,
+				8A9CFED41EA4735100B4894F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8A9CFEB31EA4735100B4894F /* Project object */;
+}

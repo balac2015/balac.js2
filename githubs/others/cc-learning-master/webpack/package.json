@@ -1,0 +1,22 @@
+{
+  "name": "webpack_learning",
+  "version": "1.0.0",
+  "description": "webpack learning",
+  "scripts": {
+    "dev": "webpack-dev-server --config webpack.config.js",
+    "build": "webpack"
+  },
+  "author": "tangsj",
+  "license": "MIT",
+  "devDependencies": {
+    "css-loader": "^0.21.0",
+    "extract-text-webpack-plugin": "^0.8.2",
+    "file-loader": "^0.8.5",
+    "html-webpack-plugin": "^2.21.0",
+    "style-loader": "^0.13.0",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.12.1",
+    "webpack-dev-server": "^1.12.0"
+  },
+  "dependencies": {}
+}

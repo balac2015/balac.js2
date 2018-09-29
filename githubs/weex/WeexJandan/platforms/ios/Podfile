@@ -1,0 +1,18 @@
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/aliyun/aliyun-specs.git'
+
+platform :ios, '8.0'
+use_frameworks!
+target 'Jiandan' do
+    pod 'SVProgressHUD', '~> 2.1.2'
+	pod 'WeexSDK', '~> 0.11.0'
+    pod 'AFNetworking', '~> 3.1.0'
+    pod 'HTMLReader', '~> 2.0.5'
+    pod 'SDWebImage', '~> 3.8.2'
+    pod 'MWPhotoBrowser', '~> 2.1.2'
+    pod 'NullSafe', '~> 1.2.2'
+    pod 'GCDWebServer', '~> 3.3.3'
+    pod 'SSZipArchive', '~> 1.8.1'
+    pod 'AlicloudPush', '~> 1.9.1'
+    pod 'MJExtension', '~> 3.0.13'
+end

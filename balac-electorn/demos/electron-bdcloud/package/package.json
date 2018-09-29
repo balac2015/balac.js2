@@ -1,0 +1,35 @@
+{
+  "name": "electron-cloud",
+  "version": "1.0.0",
+  "description": "A project of electron practices copy the bd",
+  "main": "./main.js",
+  "author": {
+    "name": "woox.wzd",
+    "email": "woox.wzd@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zedwang/electron-bdcloud.git"
+  },
+  "license": "MIT",
+  "build": {
+    "productName": "electron-cloud",
+    "appId": "zed.woox.icloud",
+    "compression": "maximum",
+    "artifactName": "${productName}-${version}-${os}-${arch}.${ext}",
+    "win": {
+      "target": "nsis",
+      "icon": "./resource/logo.ico"
+    },  
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "artifactName": "${productName}-${version}-${os}-${arch}-setup.${ext}",
+      "deleteAppDataOnUninstall": true
+    },
+    "directories": {
+      "buildResources": "./resource",
+      "output": "release"
+    }
+  }
+}
